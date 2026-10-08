@@ -17,7 +17,17 @@ export function IntroProvider({ children }: { children: React.ReactNode }) {
   const [booted, setBooted] = useState(false);
 
   useEffect(() => {
+    const currentPath = window.location.pathname;
     const currentHash = window.location.hash;
+
+    // Only show intro animation on the home page ("/")
+    // Any sub-route (e.g. /view) should skip the animation entirely
+    if (currentPath !== "/") {
+      setShowWelcome(false);
+      setIntroComplete(true);
+      setBooted(true);
+      return undefined;
+    }
 
     if (currentHash === "#portfolio" || currentHash === "#work") {
       setShowWelcome(false);
