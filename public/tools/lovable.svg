@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Lovable">
+  <!-- Lovable: heart shape with pink/red gradient -->
+  <defs>
+    <linearGradient id="lovG" x1="10" y1="15" x2="90" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF4D6D"/>
+      <stop offset="100%" stop-color="#FF8C55"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#lovG)" d="
+    M50 85
+    L18 55
+    C8 45 8 28 18 18
+    C28 8 45 8 50 20
+    C55 8 72 8 82 18
+    C92 28 92 45 82 55
+    Z
+  "/>
+</svg>

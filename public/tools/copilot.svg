@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="GitHub Copilot">
+  <!-- GitHub Copilot: robot/alien face with large goggle eyes and mouth grille -->
+  <!-- Head/helmet outer shape -->
+  <path fill="#24292F" d="
+    M50 5
+    C28 5 12 20 12 40
+    C12 52 17 62 26 68
+    L26 80
+    C26 84 30 88 34 88
+    L38 88
+    L38 80
+    C40 81 43 82 47 82
+    L47 90
+    L53 90
+    L53 82
+    C57 82 60 81 62 80
+    L62 88
+    L66 88
+    C70 88 74 84 74 80
+    L74 68
+    C83 62 88 52 88 40
+    C88 20 72 5 50 5
+    Z
+  "/>
+  <!-- Left goggle eye (white outer) -->
+  <ellipse cx="34" cy="42" rx="14" ry="13" fill="#FFFFFF"/>
+  <!-- Right goggle eye (white outer) -->
+  <ellipse cx="66" cy="42" rx="14" ry="13" fill="#FFFFFF"/>
+  <!-- Left pupil -->
+  <ellipse cx="34" cy="42" rx="7" ry="7" fill="#24292F"/>
+  <!-- Right pupil -->
+  <ellipse cx="66" cy="42" rx="7" ry="7" fill="#24292F"/>
+  <!-- Nose bridge between eyes -->
+  <rect x="44" y="38" width="12" height="8" rx="2" fill="#24292F"/>
+  <!-- Mouth grille slots -->
+  <rect x="36" y="68" width="8" height="8" rx="2" fill="#FFFFFF"/>
+  <rect x="46" y="68" width="8" height="8" rx="2" fill="#FFFFFF"/>
+  <rect x="56" y="68" width="8" height="8" rx="2" fill="#FFFFFF"/>
+</svg>

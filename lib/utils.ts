@@ -1,12 +1,18 @@
 export function getCareerYearsTenths(startMonth: string, now = new Date()): string {
   const start = new Date(startMonth);
-  if (Number.isNaN(start.getTime())) return "0.0";
+  if (Number.isNaN(start.getTime())) return "2";
 
-  const months =
+  const totalMonths =
     (now.getFullYear() - start.getFullYear()) * 12 +
     (now.getMonth() - start.getMonth());
 
-  return (Math.max(0, months) * 0.1).toFixed(1);
+  const yearsFloat = Math.max(0, totalMonths) / 12;
+
+  if (yearsFloat % 1 === 0) {
+    return yearsFloat.toFixed(0);
+  }
+
+  return yearsFloat.toFixed(1);
 }
 
 export function cn(...parts: Array<string | false | null | undefined>) {

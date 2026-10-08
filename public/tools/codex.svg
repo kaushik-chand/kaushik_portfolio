@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="GPT Codex">
+  <!-- OpenAI/GPT logo: interlocking knot/flower in purple -->
+  <!-- This is the official OpenAI swirl mark rendered in purple (#7C3AED) -->
+  <path fill="#7C3AED" d="
+    M91.5 37.5
+    A37.5 37.5 0 0 0 63.2 5.2
+    A28 28 0 0 0 37.5 5
+    A37.5 37.5 0 0 0 8.5 62.5
+    A28 28 0 0 0 21.5 85
+    A37.5 37.5 0 0 0 36.8 94.8
+    A28 28 0 0 0 62.5 95
+    A37.5 37.5 0 0 0 91.5 37.5
+    Z
+    M50 14
+    A10 10 0 0 1 60 22
+    L72 44
+    A18 18 0 0 0 78 34
+    A24 24 0 0 1 88 50
+    A24 24 0 0 1 78 66
+    A18 18 0 0 0 72 56
+    L60 78
+    A10 10 0 0 1 50 86
+    A10 10 0 0 1 40 78
+    L28 56
+    A18 18 0 0 0 22 66
+    A24 24 0 0 1 12 50
+    A24 24 0 0 1 22 34
+    A18 18 0 0 0 28 44
+    L40 22
+    A10 10 0 0 1 50 14
+    Z
+  "/>
+</svg>

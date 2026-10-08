@@ -11,12 +11,12 @@ export function ToolsGrid() {
         <Reveal>
           <SectionHeading
             eyebrow="Toolkit"
-            title="Professional tools"
-            description="Tools I use to build products and experiences for users."
+            title="Professional Tools"
+            description="Tools and AI applications I use to design, prototype, and build modern software products."
           />
         </Reveal>
 
-        <RevealStagger className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4 md:grid-cols-4 lg:mt-9 lg:grid-cols-8 lg:gap-3">
+        <RevealStagger className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:mt-9 lg:grid-cols-6 xl:grid-cols-8 lg:gap-3">
           {professionalTools.map((tool) => (
             <RevealItem key={tool.id}>
               <div className="flex h-full flex-col items-center justify-center gap-3 rounded-md border border-border bg-surface/40 px-3 py-5 text-center transition-colors duration-300 ease-expo hover:border-ink-faint hover:bg-surface">

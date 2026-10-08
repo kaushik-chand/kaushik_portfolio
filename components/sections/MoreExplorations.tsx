@@ -23,13 +23,13 @@ export function MoreExplorations() {
   }, [filter]);
 
   return (
-    <Section id="explorations" compact className="border-t border-border">
+    <Section id="work" compact className="border-t border-border">
       <Container>
         <Reveal>
           <SectionHeading
-            eyebrow="More explorations"
-            title="Additional work"
-            description="Landing pages, dashboards, and UI systems beyond the flagship case studies."
+            eyebrow="Portfolio"
+            title="My Works"
+            description="Explore case studies, dashboards, landing pages, and interactive product designs."
           />
         </Reveal>
 

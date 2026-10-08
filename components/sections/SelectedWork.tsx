@@ -15,9 +15,9 @@ export function SelectedWork() {
       <Container>
         <Reveal>
           <SectionHeading
-            eyebrow="Selected work"
-            title="Flagship case studies"
-            description="Deep dives across product UX — research through UI systems — documented as case studies you can open."
+            eyebrow="Selected Portfolio"
+            title="My Works"
+            description="Deep dives across product UX, research, and UI systems documented as interactive case studies."
           />
         </Reveal>
 
