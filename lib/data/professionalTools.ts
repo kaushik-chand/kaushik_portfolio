@@ -1,25 +1,26 @@
 export type ProfessionalTool = {
   id: string;
   name: string;
-  logo: string;
+  icon?: string;
+  logo?: string;
 };
 
 export const professionalTools: ProfessionalTool[] = [
-  { id: "figma", name: "Figma", logo: "/tools/figma.svg" },
-  { id: "cursor", name: "Cursor", logo: "/tools/cursor.svg" },
-  { id: "claude", name: "Claude", logo: "/tools/claude.svg" },
-  { id: "gpt-codex", name: "GPT Codex", logo: "/tools/codex.svg" },
-  { id: "antigravity", name: "Antigravity", logo: "/tools/antigravity.svg" },
-  { id: "vscode", name: "VS Code", logo: "/tools/vscode.svg" },
-  { id: "copilot", name: "GitHub Copilot", logo: "/tools/copilot.svg" },
-  { id: "firefly", name: "Adobe Firefly", logo: "/tools/firefly.svg" },
+  { id: "figma", name: "Figma", icon: "logos:figma", logo: "/tools/figma.svg" },
+  { id: "cursor", name: "Cursor", icon: "simple-icons:cursor", logo: "/tools/cursor.svg" },
+  { id: "claude", name: "Claude Cowork", logo: "/tools/claude.svg" },
+  { id: "gpt-codex", name: "GPT Codex", icon: "simple-icons:openai", logo: "/tools/codex.svg" },
+  { id: "antigravity", name: "Antigravity", logo: "/tools/antigravity.png" },
+  { id: "vscode", name: "VS Code", icon: "vscode-icons:file-type-vscode", logo: "/tools/vscode.svg" },
+  { id: "copilot", name: "GitHub Copilot", icon: "simple-icons:githubcopilot", logo: "/tools/copilot.svg" },
+  { id: "firefly", name: "Adobe Firefly", logo: "/tools/firefly.png" },
   { id: "midjourney", name: "Midjourney", logo: "/tools/midjourney.svg" },
-  { id: "lovable", name: "Lovable", logo: "/tools/lovable.svg" },
-  { id: "nextjs", name: "Next.js", logo: "/tools/nextjs.png" },
-  { id: "tailwind", name: "Tailwind CSS", logo: "/tools/tailwind.svg" },
-  { id: "xd", name: "Adobe XD", logo: "/tools/xd.svg" },
-  { id: "illustrator", name: "Adobe Illustrator", logo: "/tools/illustrator.svg" },
-  { id: "photoshop", name: "Adobe Photoshop", logo: "/tools/photoshop.svg" },
-  { id: "indesign", name: "Adobe InDesign", logo: "/tools/indesign.svg" },
-  { id: "animate", name: "Adobe Animate CC", logo: "/tools/animate.svg" },
+  { id: "replit", name: "Replit", icon: "simple-icons:replit", logo: "/tools/replit.svg" },
+  { id: "nextjs", name: "Next.js", icon: "logos:nextjs-icon", logo: "/tools/nextjs.svg" },
+  { id: "tailwind", name: "Tailwind CSS", icon: "logos:tailwindcss-icon", logo: "/tools/tailwind.svg" },
+  { id: "xd", name: "Adobe XD", icon: "logos:adobe-xd", logo: "/tools/xd.svg" },
+  { id: "illustrator", name: "Adobe Illustrator", icon: "logos:adobe-illustrator", logo: "/tools/illustrator.svg" },
+  { id: "photoshop", name: "Adobe Photoshop", icon: "logos:adobe-photoshop", logo: "/tools/photoshop.svg" },
+  { id: "indesign", name: "Adobe InDesign", icon: "logos:adobe-indesign", logo: "/tools/indesign.svg" },
+  { id: "animate", name: "Adobe Animate CC", icon: "logos:adobe-animate", logo: "/tools/animate.svg" },
 ];

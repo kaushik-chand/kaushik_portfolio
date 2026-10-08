@@ -7,6 +7,7 @@ import { ScrollTriggerSync } from "@/components/motion/ScrollTriggerSync";
 import { SmoothScroll } from "@/components/motion/SmoothScroll";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
+import { ScrollToTop } from "@/components/ui/ScrollToTop";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -63,6 +64,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Navbar />
             <main id="main">{children}</main>
             <Footer />
+            <ScrollToTop />
           </IntroProvider>
         </SmoothScroll>
       </body>

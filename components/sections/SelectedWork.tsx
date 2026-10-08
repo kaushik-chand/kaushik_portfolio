@@ -6,10 +6,17 @@ import { Tag } from "@/components/ui/Chip";
 import { Container, Section, SectionHeading } from "@/components/layout/Section";
 import { flagshipProjects } from "@/lib/data/projects";
 import { cn, projectHref } from "@/lib/utils";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, ChevronDown } from "lucide-react";
 import Image from "next/image";
+import { useState } from "react";
+
+const MOBILE_INITIAL_COUNT = 5;
 
 export function SelectedWork() {
+  const [mobileExpanded, setMobileExpanded] = useState(false);
+
+  const hiddenCount = flagshipProjects.length - MOBILE_INITIAL_COUNT;
+
   return (
     <Section id="work">
       <Container>
@@ -25,8 +32,15 @@ export function SelectedWork() {
           {flagshipProjects.map((project, index) => {
             const reverse = index % 2 === 1;
             const href = projectHref(project);
+
+            // On mobile: hide items beyond MOBILE_INITIAL_COUNT unless expanded
+            const isMobileHidden = index >= MOBILE_INITIAL_COUNT && !mobileExpanded;
+
             return (
-              <RevealStagger key={project.id}>
+              <RevealStagger
+                key={project.id}
+                className={cn(isMobileHidden && "hidden lg:block")}
+              >
                 <article
                   className={cn(
                     "grid items-center gap-8 lg:grid-cols-2 lg:gap-14",
@@ -93,6 +107,37 @@ export function SelectedWork() {
             );
           })}
         </div>
+
+        {/* View More / View Less button — mobile only */}
+        {hiddenCount > 0 && (
+          <div className="mt-12 flex justify-center lg:hidden">
+            <button
+              onClick={() => setMobileExpanded((prev) => !prev)}
+              aria-expanded={mobileExpanded}
+              className="group inline-flex items-center gap-2 rounded-full border border-ink/10 bg-base px-6 py-3 text-sm font-medium text-ink-muted shadow-sm transition-all duration-300 hover:border-accent/40 hover:text-accent active:scale-95"
+            >
+              {mobileExpanded ? (
+                <>
+                  View Less
+                  <ChevronDown
+                    size={16}
+                    strokeWidth={1.75}
+                    className="rotate-180 transition-transform duration-300"
+                  />
+                </>
+              ) : (
+                <>
+                  View {hiddenCount} More {hiddenCount === 1 ? "Work" : "Works"}
+                  <ChevronDown
+                    size={16}
+                    strokeWidth={1.75}
+                    className="transition-transform duration-300 group-hover:translate-y-0.5"
+                  />
+                </>
+              )}
+            </button>
+          </div>
+        )}
       </Container>
     </Section>
   );

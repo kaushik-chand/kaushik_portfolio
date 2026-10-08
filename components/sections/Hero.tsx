@@ -44,14 +44,14 @@ export function Hero() {
       />
 
       <div className="relative mx-auto flex w-full max-w-content flex-col items-start px-5 sm:px-8 lg:px-10">
-        
+
 
         {/* 2. Hero Content Container (2 columns on Desktop, Stacked on Mobile) */}
         <div className="mt-5 grid w-full items-start gap-6 sm:mt-6 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12">
-          
+
           {/* Left Column: Heading + Subtitle + (Mobile Photo) + Description + CTAs + Stats */}
           <div className="flex flex-col items-start text-left">
-            
+
             {/* Title */}
             <motion.h1
               initial={reduce ? false : { opacity: 0, y: 12 }}
@@ -78,7 +78,7 @@ export function Hero() {
               transition={{ duration: 0.5, ease: EASE_EXPO, delay: 0.2 }}
               className="mt-4 font-display text-base font-normal leading-snug text-ink sm:text-xl lg:text-[1.35rem]"
             >
-              UI/UX Designer <span className="text-ink-faint">&amp;</span> Front end developer
+              UX/UI Designer <span className="text-ink-faint">&amp;</span> Front end developer
             </motion.p>
 
             {/* MOBILE ONLY: Portrait Photo Card directly below Subtitle (NO SECOND OFFSET STROKE) */}
@@ -111,8 +111,7 @@ export function Hero() {
               transition={{ duration: 0.5, ease: EASE_EXPO, delay: 0.26 }}
               className="relative z-10 mt-6 max-w-xl text-left text-base leading-7 text-ink-muted sm:mt-8 sm:text-lg sm:leading-8"
             >
-              I design intuitive digital experiences and build interactive interfaces that combine
-              user needs, thoughtful visual hierarchy, and clean front-end execution.
+              I'm a product-minded UX designer who researches, designs, and builds, using AI to move faster while keeping every decision grounded in real user needs.
             </motion.p>
 
             {/* CTA Buttons Row */}

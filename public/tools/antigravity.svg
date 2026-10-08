@@ -1,18 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Antigravity">
-  <!-- Antigravity (Google): black arch/bridge/boomerang shape -->
-  <!-- The shape looks like an inverted U or arch with wide splayed feet -->
-  <path fill="#1A1A1A" d="
-    M10 80
-    C10 80 15 55 30 38
-    C40 27 50 22 50 22
-    C50 22 60 27 70 38
-    C85 55 90 80 90 80
-    C90 80 80 80 75 80
-    C75 80 70 62 60 50
-    C54 43 50 40 50 40
-    C50 40 46 43 40 50
-    C30 62 25 80 25 80
-    C20 80 10 80 10 80
+  <defs>
+    <linearGradient id="agG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4285F4"/>
+      <stop offset="33%" stop-color="#9B51E0"/>
+      <stop offset="66%" stop-color="#EA4335"/>
+      <stop offset="100%" stop-color="#FBBC05"/>
+    </linearGradient>
+  </defs>
+  <!-- Google Antigravity / Gemini AI emblem -->
+  <path fill="url(#agG)" d="
+    M50 10
+    C50 32 32 50 10 50
+    C32 50 50 68 50 90
+    C50 68 68 50 90 50
+    C68 50 50 32 50 10
+    Z
+  "/>
+  <!-- Secondary inner sparkle -->
+  <path fill="#FFFFFF" opacity="0.9" d="
+    M50 26
+    C50 39 39 50 26 50
+    C39 50 50 61 50 74
+    C50 61 61 50 74 50
+    C61 50 50 39 50 26
     Z
   "/>
 </svg>

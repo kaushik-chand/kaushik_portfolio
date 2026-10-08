@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Next.js">
+  <circle cx="64" cy="64" r="64" fill="#000000"/>
+  <path fill="url(#nextjsG)" d="M106.667 112L49.043 37.333H37.333V90.667H48V49.923L100 117.333A64.032 64.032 0 0 0 106.667 112Z"/>
+  <rect x="79.333" y="37.333" width="10.667" height="53.333" fill="#FFFFFF"/>
+  <defs>
+    <linearGradient id="nextjsG" x1="83.5" y1="81.5" x2="103" y2="107" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>

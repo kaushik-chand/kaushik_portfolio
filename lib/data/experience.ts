@@ -18,11 +18,13 @@ export const experience: ExperienceItem[] = [
     description:
       "Shipped a utilities marketplace from zero — owning UX research, UI systems, and Next.js front-end, plus market research and brand/legal foundations.",
     tags: [
-      "UX Research",
+      "UX Market Analysis",
+      "Prompt Engineering",
+      "ChatGPT",
+      "Midjourney",
+      "Next.js",
       "UI Design",
-      "Front-End Dev",
-      "Market Research",
-      "Social Media",
+      "UX Research",
       "Branding",
     ],
   },
